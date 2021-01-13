@@ -59,9 +59,14 @@ public class Agent {
 	}
 	
 	public void printRangeOfMonths(int start, int end) {
-		for (int i = start; i <= end; i++) {
-			System.out.println(i + ". " + getMonth(i));
+		if(start <= end && start > 0 && end < 13) {
+			for (int i = start; i <= end; i++) {
+				System.out.println(i + ". " + getMonth(i));
+			}
+		} else {
+			System.out.println("Invalid input");
 		}
+
 	}
 	
 	public void printMonthNumber(String monthName) {
@@ -110,7 +115,7 @@ public class Agent {
 	public void number_to_date(int num) {
 		boolean flag = false;
 		if (num < 0 || num > 365) {
-			System.out.println("Invaild day ");
+			System.out.println("Invalid day");
 			flag = true;
 		}
 		
