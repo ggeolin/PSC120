@@ -44,4 +44,10 @@ public class Agent {
 		}
 		return return_str;
 	}
+	
+	public void printRangeOfMonths(int start, int end) {
+		for (int i = start; i <= end; i++) {
+			System.out.println(getMonth(i));
+		}
+	}
 }
