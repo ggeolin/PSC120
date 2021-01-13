@@ -106,4 +106,57 @@ public class Agent {
 		}
 		System.out.println(return_val);
 	}
+	
+	public void number_to_date(int num) {
+		boolean flag = false;
+		if (num < 0 || num > 365) {
+			System.out.println("Invaild day ");
+			flag = true;
+		}
+		
+		if(num <= 31 && !flag) {
+			System.out.println("January " + num);
+		} else if(num <= 59) {
+			System.out.println("Feburay " + (num - 31));
+		} else if(num <= 89) {
+			System.out.println("March " + (num - 59));
+		} else if(num <= 120) {
+			System.out.println("April " + (num - 89));
+		} else if(num <= 150) {
+			System.out.println("May " + (num - 120));
+		} else if(num <= 181) {
+			System.out.println("June " + (num - 150));
+		} else if(num <= 211) {
+			System.out.println("July " + (num - 181));
+		} else if(num <= 242) {
+			System.out.println("August" + (num - 211));
+		} else if(num <= 272) {
+			System.out.println("September " + (num - 242));
+		} else if(num <= 303) {
+			System.out.println("October " + (num - 272));
+		} else if(num <= 333) {
+			System.out.println("November " + (num - 303));
+		} else {
+			System.out.println("December " + (num - 333));
+		}
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
