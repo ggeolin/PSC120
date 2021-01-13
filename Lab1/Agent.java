@@ -45,9 +45,65 @@ public class Agent {
 		return return_str;
 	}
 	
+	public void printRandomList(int length) {
+		for (int i = 1; i <= length; i++) {
+			int rand_int = (int)(Math.random() * (double)length) + 1; 
+			System.out.println(getMonth(rand_int));
+		}
+	}
+	
+	public void printMonths() {
+		for (int i = 1; i <= 12; i++) {
+			System.out.println(getMonth(i));
+		}
+	}
+	
 	public void printRangeOfMonths(int start, int end) {
 		for (int i = start; i <= end; i++) {
 			System.out.println(getMonth(i));
 		}
+	}
+	
+	public void printMonthNumber(String monthName) {
+		int return_val = -1;
+		switch (monthName) {
+		case "January":
+			return_val = 1;
+			break;
+		case "February":
+			return_val = 2;
+			break;
+		case "March":
+			return_val = 3;
+			break;
+		case "April":
+			return_val = 4;
+			break;
+		case "May":
+			return_val = 5;
+			break;
+		case "June":
+			return_val = 6;
+			break;
+		case "July":
+			return_val = 7;
+			break;
+		case "August":
+			return_val = 8;
+			break;
+		case "September":
+			return_val = 9;
+			break;
+		case "October":
+			return_val = 10;
+			break;
+		case "November":
+			return_val = 11;
+			break;
+		case "December":
+			return_val = 12;
+			break;
+		}
+		System.out.println(return_val);
 	}
 }
