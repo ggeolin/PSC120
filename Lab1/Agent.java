@@ -47,7 +47,7 @@ public class Agent {
 	
 	public void printRandomList(int length) {
 		for (int i = 1; i <= length; i++) {
-			int rand_int = (int)(Math.random() * (double)length) + 1; 
+			int rand_int = (int)(Math.random() * (double)12) + 1; 
 			System.out.println(getMonth(rand_int));
 		}
 	}
