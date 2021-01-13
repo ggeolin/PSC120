@@ -48,19 +48,19 @@ public class Agent {
 	public void printRandomList(int length) {
 		for (int i = 1; i <= length; i++) {
 			int rand_int = (int)(Math.random() * (double)12) + 1; 
-			System.out.println(getMonth(rand_int));
+			System.out.println(rand_int + ". " +getMonth(rand_int));
 		}
 	}
 	
 	public void printMonths() {
 		for (int i = 1; i <= 12; i++) {
-			System.out.println(getMonth(i));
+			System.out.println(i + ". " + getMonth(i));
 		}
 	}
 	
 	public void printRangeOfMonths(int start, int end) {
 		for (int i = start; i <= end; i++) {
-			System.out.println(getMonth(i));
+			System.out.println(i + ". " + getMonth(i));
 		}
 	}
 	
