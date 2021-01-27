@@ -4,9 +4,9 @@ import spaces.Spaces;
 import sweep.SimStateSweep;
 
 public class Enviroment extends SimStateSweep {
-	public int n = 100;//default number of agent to create.
-	public double p = 1.0; //probability of random movement.
-	public int searchRadius = 2;
+	public int n = 100;		//default number of agent to create.
+	public double p = 1.0; 		//probability of random movement.
+	public int searchRadius = 2;	
 	public boolean broadRule = false;
 	public boolean bounded = false;
 
