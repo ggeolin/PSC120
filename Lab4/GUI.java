@@ -19,5 +19,4 @@ public class GUI extends GUIStateSweep {
 		GUI.initialize(Environment.class, Experimenter.class, GUI.class, 400, 400, Color.WHITE, Color.RED, false, spaces.SPARSE);
 
 	}
-
 }
